@@ -1,0 +1,73 @@
+<!-- catalogo de productos -->
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Client</title>
+    <link rel="stylesheet" href="../../../globalStyles.css" />
+    <link rel="stylesheet" href="./homeStyles.css" />
+  </head>
+
+  <body>
+    <!--ENCABEZADO -->
+    <header class="header">
+    <!--logo del encabezado -->
+      <div class="header_marca">
+        <p class="logo_titulo">
+          <img src="/assets/logo_food_store_blanco.png" alt="Food Store logo" class="logo_img"/>
+          <span class="logo_nombre_blanco">FOOD STORE</span>
+        </p>
+      </div>
+    <!-- navegacion: enlace al carrito y boton logout del encabezado -->
+      <div class="header_enlaces">
+      <nav class="nav">
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a href="./../cart/cart.html" class="nav_link">ir al Carrito</a>
+          </li>
+        </ul>
+      </nav>
+      <!--boton para salir de la cuenta -->
+      <button id="logoutButton" class="logout-button">Logout</button>
+      </div>
+    </header>
+
+    <!--CUERPO PRINCIPAL -->
+    <main class="main-container">
+      <!-- Seccion izquierda: Contenedor de categorias o sidebar -->
+      <aside class="barra-lateral">
+        <h2 class="barra-lateral-titulo">Categorías</h2>
+        <ul id="lista-categorias" class="barra-lateral-lista"></ul>
+      </aside>
+
+      <!-- Sección derecha: Contenedor de productos y menú de busqueda -->
+      <div>
+        <!-- Barra de busqueda -->
+        <section class="buscar-container">
+          <input type="text" id="buscar" class="buscar-input" placeholder="Filtrar productos por nombre"/>
+        </section>
+        <!-- Contenedor de productos -->
+        <section class="products">
+          <div id="contenedor-productos" class="products_grid"></div>
+        </section>
+      </div>
+    </main>
+
+    <!--PIE DE PAGINA-->
+    <footer>
+      <p>&copy; 2026 Food Store - Client Home</p>
+        <hr>
+        <p> <!--datos del alumno-->
+            <strong>
+                Presentacion Parcial 1 - Programación 3 - TUPAD - UTN 
+            </strong><br>
+            Nombre: Daniel Nicolas Dominguez Coria - DNI: 35085946<br>
+            Tutor: Luciano Chiroli<br>
+        </p>
+    </footer>
+
+    <!--enlace al archivo ts que gestiona la página-->
+    <script type="module" src="./home.ts"></script>
+  </body>
+</html>

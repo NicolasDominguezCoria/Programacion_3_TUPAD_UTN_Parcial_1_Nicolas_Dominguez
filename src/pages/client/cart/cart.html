@@ -1,0 +1,75 @@
+<!-- vista del carrito -->
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito</title>
+    <link rel="stylesheet" href="../../../globalStyles.css" />
+    <link rel="stylesheet" href="./cartStyles.css" />
+  </head>
+
+  <body>
+    <!--ENCABEZADO -->
+    <header class="header">
+      <!--logo del encabezado -->
+      <div class="header_marca">
+        <p class="logo_titulo">
+          <img src="/assets/logo_food_store_blanco.png" alt="Food Store logo" class="logo_img"/>
+          <span class="logo_nombre_blanco">FOOD STORE</span>
+        </p>
+      </div>
+      <!-- navegacion: enlace para volver al catálogo -->
+      <div class="header_enlaces">
+      <nav class="nav">
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a href="./../home/home.html" class="nav_link">Volver al Catálogo</a>
+          </li>
+        </ul>
+      </nav>
+      </div>
+    </header>
+
+    <!--CUERPO PRINCIPAL -->
+    <main class="main-container">
+      <!-- Contenedor lista de compras -->
+      <section class="tarjeta-panel">
+        <h2>Mi Carrito</h2>
+
+        <!-- contenedor donde se inyectarán las productos seleccionados -->
+        <div id="contenedor_productos"></div>
+      </section>
+
+      <!-- Lado derecho Contenedor del resumen de precio de la compra -->
+      <section class="tarjeta-panel tarjeta-der">
+        <div>
+          <h2>Resumen</h2>
+
+          <!-- Contenido del contenedor del lado derecho -->
+          <div class="resumen">
+            <div class="resumen_total"></div>
+            <button class="btn btn--finalizar">Finalizar compra</button>
+
+            <span class="resumen__mensaje">No es posible finalizar la compra en esta version</span>
+
+            <button class="btn-vaciar">Vaciar carrito</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 Food Store - Cart</p>
+        <hr>
+        <p> <!--datos del alumno-->
+            <strong>
+                Presentacion Parcial 1 - Programación 3 - TUPAD - UTN 
+            </strong><br>
+            Nombre: Daniel Nicolas Dominguez Coria - DNI: 35085946<br>
+            Tutor: Luciano Chiroli<br>
+        </p>
+    </footer>
+    <script type="module" src="./cart.ts"></script>
+  </body>
+</html>
